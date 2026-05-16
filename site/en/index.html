@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — Ing. Zuzana Vašková</title>
+    <meta name="description" content="Personal portfolio of Ing. Zuzana Vašková. Specialist in civil engineering, reconstructions, and BIM modeling in Archicad.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <nav class="main-nav">
+                <a href="../en/index.html">Home</a>
+                <a href="../en/about.html">About</a>
+                <a href="../en/projects/index.html">Projects</a>
+                <a href="../en/cv.html">CV</a>
+                <a href="../en/contact.html">Contact</a>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div class="lang-switcher">
+                    <a href="../index.html" >SK</a> | 
+                    <a href="../en/index.html" class='active'>EN</a> | 
+                    <a href="../de/index.html" >DE</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"></button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <button class="menu-toggle-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="../en/index.html">Home</a>
+            <a href="../en/about.html">About</a>
+            <a href="../en/projects/index.html">Projects</a>
+            <a href="../en/cv.html">CV</a>
+            <a href="../en/contact.html">Contact</a>
+        </nav>
+        <div class="lang-switcher mt-8">
+            <a href="../index.html" >SK</a> | 
+            <a href="../en/index.html" class='active'>EN</a> | 
+            <a href="../de/index.html" >DE</a>
+        </div>
+    </div>
+
+    <main>
+
+        <section id="hero" class="container" style="padding-top: 80px; padding-bottom: 48px;">
+            <div class="reading-width">
+                <h1 class="text-hero-name" style="margin-bottom: 32px;">Ing. Zuzana Vašková</h1>
+                <div class="project-result" style="border-left-width: 4px; padding-left: 24px;">
+                    <p class="text-hero-statement" style="font-size: 20px; line-height: 1.6; color: var(--color-text);">I am a civil engineer specializing in building construction, architecture, and BIM modeling of reconstructions. I focus on project preparation with an emphasis on accuracy, clear output, and meaningful technical solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 48px;">
+            <h2 class="mb-12" style="display: flex; align-items: center; text-transform: uppercase; letter-spacing: 0.1em; font-size: 16px;"><span style="display: inline-block; width: 32px; height: 2px; background-color: #EAB308; margin-right: 16px;"></span>How I work</h2>
+            <div class="grid-4">
+                <div class="process-step">
+                    <div class="process-title">Analysis</div>
+                    <p>Understanding the existing condition — site, construction, context, and constraints.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-title">Design</div>
+                    <p>Concept development — functional, spatial, and structural decisions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-title">BIM Model</div>
+                    <p>Creating the digital model — coordination, collision check, visualization.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-title">Documentation</div>
+                    <p>Processing project documentation — drawings, sections, details, specifications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-top: 48px; padding-bottom: 96px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px;">
+                <h2 style="margin:0;">Projects</h2>
+                <a href="../en/projects/index.html" class="text-muted" style="font-size: 14px; font-weight: 500;">All projects →</a>
+            </div>
+            <div class="project-list">
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="../assets/images/projects/freising.jpg" alt="Freising" loading="lazy">
+                    </div>
+                    <div>
+                        <div class="project-meta">
+                            <span class="project-tag">RESIDENTIAL BUILDING</span><span class="project-tag">RECONSTRUCTION</span><span class="project-tag">ARCHICAD</span>
+                        </div>
+                        <h3 class="project-title">Freising</h3>
+                        <p class="project-desc">Processing of project documentation from the original state and demolition works to the new state and structural details, including setting project parameters for Nevaris and Bexel software.</p>
+                        <div class="project-result" style="border-left-width: 3px; padding-left: 16px;">
+                            40 apartments in a reconstructed heritage-protected building in Germany.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="../assets/images/projects/eversbuschstrasse.png" alt="Eversbuschstrasse" loading="lazy">
+                    </div>
+                    <div>
+                        <div class="project-meta">
+                            <span class="project-tag">RESIDENTIAL BUILDING</span><span class="project-tag">RECONSTRUCTION</span><span class="project-tag">ARCHICAD</span>
+                        </div>
+                        <h3 class="project-title">Eversbuschstrasse</h3>
+                        <p class="project-desc">Processing of project documentation from the original state and demolition works to the new state and structural details, including documentation for the garden and surroundings.</p>
+                        <div class="project-result" style="border-left-width: 3px; padding-left: 16px;">
+                            Reconstruction of a residential complex in Germany — 900 m² of living space, 9 luxury apartments, 5 apartments for seniors.
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2 class="mb-8">Get in touch</h2>
+            <div class="reading-width">
+                <p class="mb-8">If my work speaks to you, or if you are dealing with a project that needs precision, technical thinking, and sensitivity to design, feel free to get in touch.</p>
+                <a href="../en/contact.html" class="btn btn-primary">Contact →</a>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="../en/privacy-policy.html">Privacy Policy</a>
+            </nav>
+            <div class="copyright">© 2026 Ing. Zuzana Vašková</div>
+            <div class="lang-switcher">
+                <a href="../index.html" >SK</a> | 
+                <a href="../en/index.html" class='active'>EN</a> | 
+                <a href="../de/index.html" >DE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/nav.js"></script>
+</body>
+</html>

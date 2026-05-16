@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochrana osobných údajov — Ing. Zuzana Vašková</title>
+    <meta name="description" content="Informácie o ochrane osobných údajov na stránke Ing. Zuzany Vaškovej.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <nav class="main-nav">
+                <a href="./index.html">Domov</a>
+                <a href="./o-mne.html">O mne</a>
+                <a href="./projekty/index.html">Projekty</a>
+                <a href="./cv.html">CV</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div class="lang-switcher">
+                    <a href="./ochrana-udajov.html" class='active'>SK</a> | 
+                    <a href="./en/privacy-policy.html" >EN</a> | 
+                    <a href="./de/datenschutz.html" >DE</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"></button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <button class="menu-toggle-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="./index.html">Domov</a>
+            <a href="./o-mne.html">O mne</a>
+            <a href="./projekty/index.html">Projekty</a>
+            <a href="./cv.html">CV</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </nav>
+        <div class="lang-switcher mt-8">
+            <a href="./ochrana-udajov.html" class='active'>SK</a> | 
+            <a href="./en/privacy-policy.html" >EN</a> | 
+            <a href="./de/datenschutz.html" >DE</a>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="container" style="padding-top: 64px;">
+            <h1 class="mb-8">Ochrana osobných údajov</h1>
+            
+            <div class="reading-width privacy-page">
+                <p class="mb-8">Táto stránka vysvetľuje, aké osobné údaje zbierať pri návšteve webu vaskova.space a ako sú tieto údaje používané.</p>
+                <div class="project-result" style="border-left-width: 3px; padding-left: 32px; font-size: 15px; color: var(--color-text-muted);">
+                    
+            <h2>Prevádzkovateľ</h2>
+            <p>Prevádzkovateľom osobných údajov je Ing. Zuzana Vašková. Vaše údaje spracúvam v súlade s nariadením GDPR.</p>
+            
+            <h2>Rozsah a účel spracovania</h2>
+            <p>Cez kontaktný formulár zbieram vaše meno a e-mailovú adresu výhradne za účelom odpovede na vašu otázku alebo dopyt. Tieto údaje neposkytujem tretím stranám a neukladám ich do žiadnej marketingovej databázy.</p>
+            
+            <h2>Súbory cookies</h2>
+            <p>Tento web používa výhradne technické (nevyhnutné) súbory cookies, ktoré slúžia na správne fungovanie stránky (napr. zapamätanie si zvoleného farebného režimu alebo jazyka). Nepoužívam žiadne analytické ani reklamné cookies tretích strán.</p>
+            
+            <h2>Vaše práva</h2>
+            <p>Máte právo kedykoľvek požiadať o informáciu o tom, aké údaje o vás spracúvam, požiadať o ich opravu alebo vymazanie. V prípade otázok ma kontaktujte na e-mailovej adrese uvedenej v sekcii Kontakt.</p>
+        
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="./ochrana-udajov.html">Ochrana údajov</a>
+            </nav>
+            <div class="copyright">© 2026 Ing. Zuzana Vašková</div>
+            <div class="lang-switcher">
+                <a href="./ochrana-udajov.html" class='active'>SK</a> | 
+                <a href="./en/privacy-policy.html" >EN</a> | 
+                <a href="./de/datenschutz.html" >DE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me — Ing. Zuzana Vašková</title>
+    <meta name="description" content="Meet Ing. Zuzana Vašková — a civil engineer focused on BIM and reconstructions.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <nav class="main-nav">
+                <a href="../en/index.html">Home</a>
+                <a href="../en/about.html">About</a>
+                <a href="../en/projects/index.html">Projects</a>
+                <a href="../en/cv.html">CV</a>
+                <a href="../en/contact.html">Contact</a>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div class="lang-switcher">
+                    <a href="../o-mne.html" >SK</a> | 
+                    <a href="../en/about.html" class='active'>EN</a> | 
+                    <a href="../de/ueber-mich.html" >DE</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"></button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <button class="menu-toggle-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="../en/index.html">Home</a>
+            <a href="../en/about.html">About</a>
+            <a href="../en/projects/index.html">Projects</a>
+            <a href="../en/cv.html">CV</a>
+            <a href="../en/contact.html">Contact</a>
+        </nav>
+        <div class="lang-switcher mt-8">
+            <a href="../o-mne.html" >SK</a> | 
+            <a href="../en/about.html" class='active'>EN</a> | 
+            <a href="../de/ueber-mich.html" >DE</a>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="container" style="padding-top: 64px;">
+            <h1 class="mb-8">About me</h1>
+            
+            <div class="cv-block">
+                <div class="cv-row">
+                    <div class="cv-header">
+                        <div class="cv-icon-wrap" style="color: #EAB308;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                        <div class="cv-label">About me</div>
+                    </div>
+                    <div class="cv-content">
+                        <div class="project-result" style="color: var(--color-text); font-weight: 400; font-size: 15px; border-left-width: 3px;">
+                            <p class="mb-4">I am a structural designer specializing in reconstructions, project documentation, and BIM modeling. I work in a field where technical precision meets design thinking.</p>
+                            <p class="mb-4">I am drawn to reconstructions because of the work with what already exists — understanding the structure, context, and constraints before proposing something new.</p>
+                            <p class="mb-4">I see BIM as a methodology, not just software. The digital model allows me to verify solutions, coordinate trades, and work with higher accuracy.</p>
+                            <p class="mb-4">In my work, I value precision, clarity, and practicality. Good documentation is not a formality — it is the foundation for a quality result on the construction site.</p>
+                            <p>Outside of work, I recharge in the mountains, through sports, and photography. The Slovak mountains are my regular destination.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-row">
+                    <div class="cv-header">
+                        <div class="cv-icon-wrap" style="color: #EAB308;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                        <div class="cv-label">Outside work</div>
+                    </div>
+                    <div class="cv-content">
+                        <div class="grid-3" style="gap: 24px;"><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/running.png" alt="Minimalist illustration of a running person - symbol of endurance and rhythm" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Running</h3>
+                <p>A way to clear my head and keep a steady rhythm.</p>
+            </div>
+        </div><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/skiing.png" alt="Technical illustration of a skier on a slope with mountain contour lines" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Skiing</h3>
+                <p>Dynamics, focus, and the joy of movement.</p>
+            </div>
+        </div><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/volleyball.png" alt="Geometric sketch of a volleyball net and ball - symbol of teamwork" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Volleyball</h3>
+                <p>Team spirit, energy, and a natural balance to work.</p>
+            </div>
+        </div><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/photography.png" alt="Architectural drawing of a camera focusing on technical detail" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Photography</h3>
+                <p>Attention to detail, light, and composition.</p>
+            </div>
+        </div><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/travel_v5.svg" alt="Graphic study of a suitcase, globe, and airplane - symbol of travel and perspective" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Languages and Travel</h3>
+                <p>Exploring new countries, cultures, and broadening horizons.</p>
+            </div>
+        </div><div class="interest-card">
+            <div class="interest-img">
+                <img src="../assets/images/interests/hiking_v5.svg" alt="Linear illustration of mountains, compass, and backpack - symbol of active recreation" loading="lazy">
+            </div>
+            <div class="interest-card-content">
+                <h3>Hiking</h3>
+                <p>Active relaxation in the mountains and discovering new views.</p>
+            </div>
+        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="../en/privacy-policy.html">Privacy Policy</a>
+            </nav>
+            <div class="copyright">© 2026 Ing. Zuzana Vašková</div>
+            <div class="lang-switcher">
+                <a href="../o-mne.html" >SK</a> | 
+                <a href="../en/about.html" class='active'>EN</a> | 
+                <a href="../de/ueber-mich.html" >DE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/nav.js"></script>
+</body>
+</html>

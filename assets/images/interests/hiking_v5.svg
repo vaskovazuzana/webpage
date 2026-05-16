@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  
+  <!-- Full Grey Background -->
+  <rect width="400" height="400" fill="#f0f0f0"/>
+  
+  <!-- White Square (centered, matching AI frame dimensions) -->
+  <rect x="24" y="24" width="352" height="352" fill="white" filter="url(#shadow)"/>
+  
+  <!-- Illustration (Hiking V3 content) -->
+  <g transform="translate(200, 200) scale(1.0)">
+    <g transform="translate(-140, -140)">
+      <g transform="translate(20, 100)">
+        <path d="M0 180 L100 20 L200 180 Z" stroke="#333" stroke-width="1.8" fill="none"/>
+        <path d="M100 20 L125 70 L85 85 L100 20" fill="#EAB308" opacity="0.3"/>
+        <path d="M130 180 L200 60 L270 180 Z" stroke="#333" stroke-width="1.5" fill="none"/>
+        <path d="M200 60 L220 110 L185 120 L200 60" fill="#EAB308" opacity="0.2"/>
+      </g>
+      <g transform="translate(240, 80)">
+        <circle cx="0" cy="0" r="30" stroke="#333" stroke-width="1" fill="none"/>
+        <path d="M0 -25 L4 0 L0 25 L-4 0 Z" fill="#333"/>
+        <path d="M-25 0 L0 -4 L25 0 L0 4 Z" fill="#EAB308" opacity="0.7"/>
+      </g>
+      <g transform="translate(200, 200)">
+        <rect x="0" y="0" width="50" height="70" rx="8" stroke="#333" stroke-width="1.5" fill="none"/>
+        <rect x="10" y="15" width="30" height="8" fill="#EAB308" opacity="0.5"/>
+      </g>
+      <path d="M30 260 Q 100 230, 150 280 T 250 240" stroke="#EAB308" stroke-width="2" fill="none" stroke-dasharray="8 4"/>
+    </g>
+  </g>
+</svg>

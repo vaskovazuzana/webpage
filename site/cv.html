@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Životopis — Ing. Zuzana Vašková</title>
+    <meta name="description" content="Profesijný profil a životopis Ing. Zuzany Vaškovej. Skúsenosti v oblasti stavebníctva a architektúry.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <nav class="main-nav">
+                <a href="./index.html">Domov</a>
+                <a href="./o-mne.html">O mne</a>
+                <a href="./projekty/index.html">Projekty</a>
+                <a href="./cv.html">CV</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div class="lang-switcher">
+                    <a href="./cv.html" class='active'>SK</a> | 
+                    <a href="./en/cv.html" >EN</a> | 
+                    <a href="./de/cv.html" >DE</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"></button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <div class="logo">Ing. Zuzana Vašková</div>
+            <button class="menu-toggle-close" aria-label="Close Menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="./index.html">Domov</a>
+            <a href="./o-mne.html">O mne</a>
+            <a href="./projekty/index.html">Projekty</a>
+            <a href="./cv.html">CV</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </nav>
+        <div class="lang-switcher mt-8">
+            <a href="./cv.html" class='active'>SK</a> | 
+            <a href="./en/cv.html" >EN</a> | 
+            <a href="./de/cv.html" >DE</a>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="container" style="padding-top: 64px;">
+            <h1 class="mb-8">Životopis</h1>
+            
+            <div class="cv-block">
+                <div class="cv-row">
+                    <div class="cv-header"><div class="cv-label">Profil</div></div>
+                    <div class="cv-content">Stavebná inžinierka so zameraním na projekciu stavieb a BIM modelovanie rekonštrukcií. V praxi sa venujem projektovej príprave, digitálnemu spracovaniu stavieb a práci s technickou dokumentáciou, s dôrazom na presnosť, prehľadnosť a praktické využitie výstupov.</div>
+                </div>
+                <div class="cv-row">
+                    <div class="cv-header"><div class="cv-label">Vzdelanie</div></div>
+                    <div class="cv-content">Technická univerzita v Košiciach, Stavebná fakulta — Pozemné stavby a architektúra, bakalárske štúdium, ukončené štátnou skúškou 17. 6. 2021. Nadväzujúce štúdium v odbore Pozemné stavby v rokoch 2021 až 2023. Gymnázium Stropkov, ukončené maturitnou skúškou v roku 2017.</div>
+                </div>
+                <div class="cv-row" style="border-bottom: none;">
+                    <div class="cv-header"><div class="cv-label">Software</div></div>
+                    <div class="cv-content">
+                        <div class="project-result" style="border-left-width: 3px; padding-bottom: 2px;">
+                            <span class="project-tag" style="margin: 4px 4px 4px 0;">Archicad</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Dalux</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Allplan</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Lumion</span><span class="project-tag" style="margin: 4px 4px 4px 0;">BIMx</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Adobe Photoshop</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Adobe Lightroom.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding-top: 56px;">
+                <a href="./assets/cv/cv-sk.pdf" class="btn btn-primary" target="_blank">Stiahnuť PDF</a>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="./ochrana-udajov.html">Ochrana údajov</a>
+            </nav>
+            <div class="copyright">© 2026 Ing. Zuzana Vašková</div>
+            <div class="lang-switcher">
+                <a href="./cv.html" class='active'>SK</a> | 
+                <a href="./en/cv.html" >EN</a> | 
+                <a href="./de/cv.html" >DE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/nav.js"></script>
+</body>
+</html>
