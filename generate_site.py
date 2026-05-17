@@ -590,6 +590,8 @@ LANGS = {
         'step_2_title': 'Návrh', 'step_2_desc': 'Vývoj koncepcie — funkčné, priestorové a konštrukčné rozhodnutia.',
         'step_3_title': 'BIM Model', 'step_3_desc': 'Tvorba digitálneho modelu — koordinácia, kontrola kolízií, vizualizácia.',
         'step_4_title': 'Dokumentácia', 'step_4_desc': 'Spracovanie projektovej dokumentácie — výkresy, rezy, detaily, špecifikácie.',
+        'process_cta_text': 'Zaujíma vás výsledok mojej práce? Pozrite si kompletné portfólio s ukážkami realizácií, BIM modelov a technických riešení.',
+        'process_cta_btn': 'Zobraziť projekty',
         'projects_intro': 'Vybrané projekty z oblasti rekonštrukcií a projektovej dokumentácie.',
         'projects_empty': 'Projekty pripravujem. Prvé prípadové štúdie pribudnú čoskoro.',
         'projects_all': 'Všetky projekty →',
@@ -621,6 +623,55 @@ LANGS = {
                 'img': 'eversbuschstrasse.png',
                 'desc': 'Spracovanie projektovej dokumentácie od pôvodného stavu, búracích prác až po nový stav a konštrukčné detaily, vrátane dokumentácie pre záhradu a okolie.',
                 'result': 'Rekonštrukcia bytového komplexu v Nemecku — 900 m² obytnej plochy, 9 luxusných bytov, 5 bytov pre seniorov.'
+            },
+            {
+                'title': 'Rodinný dom',
+                'tags': ['RODINNÝ DOM', 'NOVOSTAVBA', 'ARCHICAD'],
+                'img': 'rodinny_dom.jpg',
+                'desc': 'Spracovanie návrhu, architektonickej štúdie a projektu pre stavebné povolenie.',
+                'result': 'Moderný dvojpodlažný rodinný dom s plochou strechou, dreveným obkladom a integrovanou garážou.'
+            },
+            {
+                'title': 'Eichstätt',
+                'tags': ['BYTOVÝ DOM', 'REKONŠTRUKCIA', 'ARCHICAD'],
+                'img': 'eichstatt.jpg',
+                'desc': 'Spracovanie projektovej dokumentácie od pôvodného stavu, búracích prác až po nový stav a konštrukčné detaily, vrátane nastavenia parametrov projektu pre sw Nevaris a Bexel.',
+                'result': '44 bytov a 8 kancelárskych priestorov v zrekonštruovanej pamiatkovo chránenej budove v nemeckom meste Eichstätt.'
+            },
+            {
+                'title': 'Královice',
+                'tags': ['BYTOVÝ KOMPLEX', 'REKONŠTRUKCIA', 'ARCHICAD'],
+                'img': 'kralovice.jpg',
+                'desc': 'Vypracovanie kompletnej projektovej dokumentácie hlavnej budovy zahŕňajúcej existujúci stav, búracie práce, navrhovaný stav a konštrukčné detaily, ako aj dokumentácie menších novostavieb a riešenia exteriéru záhrady.',
+                'result': '8 mezonetových bytov so záhradkou a parkovacím miestom v pražskej časti Královice.'
+            },
+            {
+                'title': 'RD Stropkov',
+                'tags': ['RODINNÝ DOM', 'NOVOSTAVBA', 'ARCHICAD', 'LUMION'],
+                'img': 'stropkov.jpg',
+                'desc': 'Vytvorenie 3D modelu rodinného domu na základe výkresovej dokumentácie, návrh a vizualizácia exteriéru vrátane záhrady.',
+                'result': 'Komplex 3 jednopodlažných rodinných domov s veľkou záhradou, bazénom a prístreškom.'
+            },
+            {
+                'title': 'Prosiek',
+                'tags': ['VÍKENDOVÁ CHATA', 'REKONŠTRUKCIA', 'ARCHICAD'],
+                'img': 'prosiek.jpg',
+                'desc': 'Spracovanie projektovej dokumentácie a BIM modelu búracích prác aj nového stavu pre realizáciu stavby.',
+                'result': 'Víkendová chata s vnútorným bazénom a vonkajšou saunou na Liptove.'
+            },
+            {
+                'title': 'Wasserburger Landstraße',
+                'tags': ['APARTMÁNOVÝ DOM', 'REKONŠTRUKCIA', 'ARCHICAD'],
+                'img': 'wasserburger.jpg',
+                'desc': 'Vytvorenie BIM modelu existujúcej stavby po rekonštrukcii na účely kalkulácie rozpočtu stavby.',
+                'result': '21 apartmánov v polyfunkčnej budove s obchodom na prízemí.'
+            },
+            {
+                'title': 'Schnaitsee',
+                'tags': ['BYTOVÝ KOMPLEX', 'REKONŠTRUKCIA', 'ARCHICAD'],
+                'img': 'schnaitsee.jpg',
+                'desc': 'Vytvorenie BIM modelu existujúcej stavby po rekonštrukcii na účely kalkulácie rozpočtu stavby.',
+                'result': '13 bytov v bytovom komplexe s parkoviskom v typickej bavorskej dedine.'
             }
         ],
         'contact_intro': 'Ak vás moja práca oslovila alebo riešite projekt, pri ktorom by sa zišla presnosť, technické myslenie a cit pre návrh, pokojne sa mi ozvite.',
@@ -663,6 +714,8 @@ LANGS = {
         'step_2_title': 'Design', 'step_2_desc': 'Concept development — functional, spatial, and structural decisions.',
         'step_3_title': 'BIM Model', 'step_3_desc': 'Creating the digital model — coordination, collision check, visualization.',
         'step_4_title': 'Documentation', 'step_4_desc': 'Processing project documentation — drawings, sections, details, specifications.',
+        'process_cta_text': 'Are you interested in the results of my work? View my complete portfolio of BIM models and technical solutions.',
+        'process_cta_btn': 'View projects',
         'projects_intro': 'Selected projects in reconstruction and project documentation.',
         'projects_empty': 'Projects are being prepared. The first case studies will appear soon.',
         'projects_all': 'All projects →',
@@ -694,6 +747,55 @@ LANGS = {
                 'img': 'eversbuschstrasse.png',
                 'desc': 'Processing of project documentation from the original state and demolition works to the new state and structural details, including documentation for the garden and surroundings.',
                 'result': 'Reconstruction of a residential complex in Germany — 900 m² of living space, 9 luxury apartments, 5 apartments for seniors.'
+            },
+            {
+                'title': 'Family House',
+                'tags': ['FAMILY HOUSE', 'NEW BUILD', 'ARCHICAD'],
+                'img': 'rodinny_dom.jpg',
+                'desc': 'Preparation of the design, architectural study, and project for a building permit.',
+                'result': 'Modern two-story family house with a flat roof, wood cladding, and integrated garage.'
+            },
+            {
+                'title': 'Eichstätt',
+                'tags': ['RESIDENTIAL BUILDING', 'RECONSTRUCTION', 'ARCHICAD'],
+                'img': 'eichstatt.jpg',
+                'desc': 'Processing of project documentation from the original state and demolition works to the new state and structural details, including setting project parameters for Nevaris and Bexel software.',
+                'result': '44 apartments and 8 office spaces in a reconstructed heritage-protected building in the German town of Eichstätt.'
+            },
+            {
+                'title': 'Královice',
+                'tags': ['RESIDENTIAL COMPLEX', 'RECONSTRUCTION', 'ARCHICAD'],
+                'img': 'kralovice.jpg',
+                'desc': 'Preparation of complete project documentation for the main building including existing state, demolition works, proposed state and structural details, as well as documentation for smaller new builds and garden exterior design.',
+                'result': '8 maisonette apartments with a private garden and parking space in the Prague district of Královice.'
+            },
+            {
+                'title': 'RD Stropkov',
+                'tags': ['FAMILY HOUSE', 'NEW BUILD', 'ARCHICAD', 'LUMION'],
+                'img': 'stropkov.jpg',
+                'desc': 'Creation of a 3D model of a family house based on drawing documentation, design, and visualization of the exterior including the garden.',
+                'result': 'A complex of 3 single-story family houses with a large garden, swimming pool, and carport.'
+            },
+            {
+                'title': 'Prosiek',
+                'tags': ['WEEKEND CABIN', 'RECONSTRUCTION', 'ARCHICAD'],
+                'img': 'prosiek.jpg',
+                'desc': 'Processing of project documentation and BIM model of demolition works and new state for construction execution.',
+                'result': 'A weekend cabin with an indoor swimming pool and an outdoor sauna in the Liptov region.'
+            },
+            {
+                'title': 'Wasserburger Landstraße',
+                'tags': ['APARTMENT BUILDING', 'RECONSTRUCTION', 'ARCHICAD'],
+                'img': 'wasserburger.jpg',
+                'desc': 'Creation of a BIM model of the existing building after reconstruction for the purpose of construction budget calculation.',
+                'result': '21 apartments in a mixed-use building with a shop on the ground floor.'
+            },
+            {
+                'title': 'Schnaitsee',
+                'tags': ['RESIDENTIAL COMPLEX', 'RECONSTRUCTION', 'ARCHICAD'],
+                'img': 'schnaitsee.jpg',
+                'desc': 'Creation of a BIM model of the existing building after reconstruction for the purpose of construction budget calculation.',
+                'result': '13 apartments in a residential complex with a parking lot in a typical Bavarian village.'
             }
         ],
         'contact_intro': 'If my work speaks to you, or if you are dealing with a project that needs precision, technical thinking, and sensitivity to design, feel free to get in touch.',
@@ -736,6 +838,8 @@ LANGS = {
         'step_2_title': 'Entwurf', 'step_2_desc': 'Konzeptentwicklung — funktionale, räumliche und konstruktive Entscheidungen.',
         'step_3_title': 'BIM-Modell', 'step_3_desc': 'Erstellung des digitalen Modells — Koordination, Kollisionsprüfung, Visualisierung.',
         'step_4_title': 'Dokumentation', 'step_4_desc': 'Erstellung der Projektdokumentation — Pläne, Schnitte, Details, Spezifikationen.',
+        'process_cta_text': 'Interessieren Sie sich für die Ergebnisse meiner Arbeit? Sehen Sie sich mein vollständiges Portfolio an BIM-Modellen und technischen Lösungen an.',
+        'process_cta_btn': 'Projekte ansehen',
         'projects_intro': 'Ausgewählte Projekte aus den Bereichen Sanierung und Projektdokumentation.',
         'projects_empty': 'Projekte werden vorbereitet. Die ersten Fallstudien folgen in Kürze.',
         'projects_all': 'Alle Projekte →',
@@ -767,6 +871,55 @@ LANGS = {
                 'img': 'eversbuschstrasse.png',
                 'desc': 'Bearbeitung der Projektdokumentation vom Bestand und Abbrucharbeiten bis hin zum neuen Zustand und Konstruktionsdetails, einschließlich der Dokumentation für Garten und Umgebung.',
                 'result': 'Sanierung einer Wohnanlage in Deutschland — 900 m² Wohnfläche, 9 Luxuswohnungen, 5 Seniorenwohnungen.'
+            },
+            {
+                'title': 'Einfamilienhaus',
+                'tags': ['EINFAMILIENHAUS', 'NEUBAU', 'ARCHICAD'],
+                'img': 'rodinny_dom.jpg',
+                'desc': 'Ausarbeitung von Entwurf, architektonischer Studie und Projekt für die Baugenehmigung.',
+                'result': 'Modernes zweistöckiges Einfamilienhaus mit Flachdach, Holzverkleidung und integrierter Garage.'
+            },
+            {
+                'title': 'Eichstätt',
+                'tags': ['WOHNGEBÄUDE', 'SANIERUNG', 'ARCHICAD'],
+                'img': 'eichstatt.jpg',
+                'desc': 'Bearbeitung der Projektdokumentation vom Bestand und Abbrucharbeiten bis hin zum neuen Zustand und Konstruktionsdetails, einschließlich der Festlegung von Projektparametern für die Software Nevaris und Bexel.',
+                'result': '44 Wohnungen und 8 Büroräume in einem sanierten denkmalgeschützten Gebäude in der deutschen Stadt Eichstätt.'
+            },
+            {
+                'title': 'Královice',
+                'tags': ['WOHNANLAGE', 'SANIERUNG', 'ARCHICAD'],
+                'img': 'kralovice.jpg',
+                'desc': 'Erstellung der vollständigen Projektdokumentation für das Hauptgebäude, einschließlich des Bestands, der Abbrucharbeiten, des geplanten Zustands und der Konstruktionsdetails, sowie der Dokumentation für kleinere Neubauten und die Gestaltung des Gartenbereichs.',
+                'result': '8 Maisonette-Wohnungen mit Eigengarten und Stellplatz im Prager Stadtteil Královice.'
+            },
+            {
+                'title': 'RD Stropkov',
+                'tags': ['EINFAMILIENHAUS', 'NEUBAU', 'ARCHICAD', 'LUMION'],
+                'img': 'stropkov.jpg',
+                'desc': 'Erstellung eines 3D-Modells eines Einfamilienhauses auf der Grundlage von Zeichnungsunterlagen, Entwurf und Visualisierung des Außenbereichs einschließlich des Gartens.',
+                'result': 'Ein Komplex aus 3 eingeschossigen Einfamilienhäusern mit großem Garten, Pool und Carport.'
+            },
+            {
+                'title': 'Prosiek',
+                'tags': ['WOCHENENDHAUS', 'SANIERUNG', 'ARCHICAD'],
+                'img': 'prosiek.jpg',
+                'desc': 'Bearbeitung der Projektdokumentation und des BIM-Modells der Abbrucharbeiten und des neuen Zustands für die Bauausführung.',
+                'result': 'Ein Wochenendhaus mit Innenpool und Außensauna in der Region Liptov.'
+            },
+            {
+                'title': 'Wasserburger Landstraße',
+                'tags': ['APARTMENTHAUS', 'SANIERUNG', 'ARCHICAD'],
+                'img': 'wasserburger.jpg',
+                'desc': 'Erstellung eines BIM-Modells des bestehenden Gebäudes nach der Sanierung zum Zweck der Baukalkulation.',
+                'result': '21 Apartments in einem Wohn- und Geschäftshaus mit Ladenlokal im Erdgeschoss.'
+            },
+            {
+                'title': 'Schnaitsee',
+                'tags': ['WOHNANLAGE', 'SANIERUNG', 'ARCHICAD'],
+                'img': 'schnaitsee.jpg',
+                'desc': 'Erstellung eines BIM-Modells des bestehenden Gebäudes nach der Sanierung zum Zweck der Baukalkulation.',
+                'result': '13 Wohnungen in einer Wohnanlage mit Parkplatz in einem typischen bayerischen Dorf.'
             }
         ],
         'contact_intro': 'Wenn Sie meine Arbeit anspricht oder ein Projekt betreuen, bei dem Präzision, technisches Denken und gestalterisches Feingefühl gefragt sind, können Sie sich gern bei mir melden.',
@@ -982,20 +1135,16 @@ for lang, d in LANGS.items():
                     <p>{d['step_4_desc']}</p>
                 </div>
             </div>
+            <div class="project-result" style="border-left-width: 4px; padding-left: 24px; margin-top: 48px; max-width: 760px;">
+                <p style="font-size: 18px; line-height: 1.6; color: var(--color-text); margin-bottom: 24px; font-weight: 500;">
+                    {d['process_cta_text']}
+                </p>
+                <a href="{asset_p + get_file_path(d['urls']['projects'])}" class="btn btn-primary" style="display: inline-block;">{d['process_cta_btn']} →</a>
+            </div>
         </section>
+
 
         <section class="container" style="padding-top: 48px; padding-bottom: 96px;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px;">
-                <h2 style="margin:0;">{d['sec_projects']}</h2>
-                <a href="{asset_p + get_file_path(d['urls']['projects'])}" class="text-muted" style="font-size: 14px; font-weight: 500;">{d['projects_all']}</a>
-            </div>
-            <div class="project-list">
-                {get_projects_html(asset_p)}
-            </div>
-        </section>
-
-
-        <section class="container">
             <h2 class="mb-8">{d['sec_contact']}</h2>
             <div class="reading-width">
                 <p class="mb-8">{d['contact_intro']}</p>
@@ -1047,7 +1196,7 @@ for lang, d in LANGS.items():
 
     projects_content = f'''
         <section class="container" style="padding-top: 64px; padding-bottom: 96px;">
-            <h1 class="mb-8" style="display: flex; align-items: center;"><span style="display: inline-block; width: 48px; height: 2px; background-color: #EAB308; margin-right: 24px;"></span>{d['sec_projects']}</h1>
+            <h1 class="mb-8">{d['sec_projects']}</h1>
             
             <div class="reading-width">
                 <p class="mb-12">{d['projects_intro']}</p>
