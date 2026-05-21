@@ -1,4 +1,6 @@
 export async function onRequestPost(context) {
+  return new Response('TEST CONTACT FUNCTION', { status: 200 });
+
   const { request, env } = context;
   const formData = await request.formData();
   const token = formData.get('cf-turnstile-response');
@@ -21,7 +23,6 @@ export async function onRequestPost(context) {
       { status: 403 }
     );
   }
-
 
   if (formData.get('website')) {
     return new Response('Spam detected', { status: 400 });
