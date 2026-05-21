@@ -59,31 +59,464 @@
 
     <main>
 
-        <section class="container" style="padding-top: 64px;">
-            <h1 class="mb-8">Životopis</h1>
+        <style>
+            /* Scoped style for the CV page */
+            .cv-middle-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            @media (min-width: 1024px) {
+                .cv-middle-grid {
+                    grid-template-columns: 1fr 360px;
+                    gap: 56px;
+                    align-items: start;
+                }
+            }
+
+            .cv-sidebar {
+                position: sticky;
+                top: 100px;
+            }
+
+            .cv-card-visual {
+                background-color: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+                margin-bottom: 24px;
+            }
+
+            .cv-card-visual:hover {
+                border-color: #EAB308;
+                box-shadow: 0 16px 40px rgba(234, 179, 8, 0.12);
+                transform: translateY(-6px);
+            }
+
+            .cv-visual-img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                display: block;
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            .cv-sidebar-info {
+                padding: 24px;
+            }
+
+            .cv-sidebar-title {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 12px;
+                color: var(--color-text);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .cv-sidebar-meta {
+                font-size: 13.5px;
+                color: var(--color-text-muted);
+                line-height: 1.7;
+                margin-bottom: 24px;
+            }
+
+            .cv-sidebar-meta div {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px dashed var(--color-border);
+                padding: 6px 0;
+            }
+
+            .cv-sidebar-meta div:last-child {
+                border-bottom: none;
+            }
+
+            .cv-sidebar-meta strong {
+                color: var(--color-text);
+                font-weight: 500;
+            }
+
+            /* Sections styling */
+            .cv-section {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .cv-section-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                color: var(--color-text);
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+
+            .cv-section-title::before {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 2px;
+                background-color: #EAB308;
+                margin-right: 12px;
+                flex-shrink: 0;
+            }
+
+            /* Timeline */
+            .cv-timeline {
+                position: relative;
+                padding-left: 28px;
+                border-left: 1.5px solid var(--color-border);
+                margin-left: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .cv-timeline-item {
+                position: relative;
+                transition: transform 0.2s ease;
+            }
+
+            .cv-timeline-item:hover {
+                transform: translateX(4px);
+            }
+
+            .cv-timeline-dot {
+                position: absolute;
+                left: -35px;
+                top: 5px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: var(--color-bg);
+                border: 2.5px solid #EAB308;
+                transition: background-color 0.25s ease, box-shadow 0.25s ease;
+            }
+
+            .cv-timeline-item:hover .cv-timeline-dot {
+                background-color: #EAB308;
+                box-shadow: 0 0 0 4px rgba(234, 179, 8, 0.2);
+            }
+
+            .cv-timeline-time {
+                font-size: 13px;
+                font-weight: 600;
+                color: #EAB308;
+                margin-bottom: 4px;
+                letter-spacing: 0.05em;
+            }
+
+            .cv-timeline-title {
+                font-size: 17px;
+                font-weight: 500;
+                color: var(--color-text);
+                margin-bottom: 4px;
+                line-height: 1.4;
+            }
+
+            .cv-timeline-subtitle {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-text-muted);
+                margin-bottom: 8px;
+            }
+
+            .cv-timeline-desc {
+                font-size: 14.5px;
+                line-height: 1.7;
+                color: var(--color-text-muted);
+            }
+
+            /* Software grid */
+            .software-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            @media (min-width: 480px) {
+                .software-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (min-width: 768px) {
+                .software-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .software-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            .software-card {
+                background-color: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-radius: 6px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+            }
+
+            .software-card:hover {
+                transform: translateY(-4px);
+                border-color: #EAB308;
+                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+            }
+
+            .software-card-header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .software-icon {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #EAB308;
+                background-color: rgba(234, 179, 8, 0.06);
+                border-radius: 4px;
+                flex-shrink: 0;
+                transition: background-color 0.2s ease;
+            }
+
+            .software-card:hover .software-icon {
+                background-color: rgba(234, 179, 8, 0.12);
+            }
+
+            .software-icon svg {
+                width: 20px;
+                height: 20px;
+                stroke: currentColor;
+                stroke-width: 1.8;
+                fill: none;
+            }
+
+            .software-name {
+                font-size: 15px;
+                font-weight: 500;
+                color: var(--color-text);
+            }
+
+            .software-role {
+                font-size: 13px;
+                color: var(--color-text-muted);
+                line-height: 1.45;
+                min-height: 36px;
+            }
+
+            .software-level {
+                margin-top: auto;
+                height: 3px;
+                background-color: var(--color-border);
+                border-radius: 1.5px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .software-level-bar {
+                height: 100%;
+                background-color: #EAB308;
+                border-radius: 1.5px;
+                transition: width 1.2s ease-out;
+            }
+        </style>
+
+        <section class="container" style="padding-top: 64px; padding-bottom: 64px; display: flex; flex-direction: column; gap: 56px;">
+            <h1 class="mb-4">Životopis</h1>
             
-            <div class="cv-block">
-                <div class="cv-row">
-                    <div class="cv-header"><div class="cv-label">Profil</div></div>
-                    <div class="cv-content">Stavebná inžinierka so zameraním na projekciu stavieb a BIM modelovanie rekonštrukcií. V praxi sa venujem projektovej príprave, digitálnemu spracovaniu stavieb a práci s technickou dokumentáciou, s dôrazom na presnosť, prehľadnosť a praktické využitie výstupov.</div>
+            <!-- Profil Section (Full width) -->
+            <section class="cv-section" style="padding: 0;">
+                <h2 class="cv-section-title">Profil</h2>
+                <div class="project-result" style="border-left-width: 4px; padding-left: 20px;">
+                    <p class="cv-profile-text" style="font-size: 15.5px; line-height: 1.8;">
+                        Stavebná inžinierka so zameraním na projekciu stavieb a BIM modelovanie rekonštrukcií. V praxi sa venujem projektovej príprave, digitálnemu spracovaniu stavieb a práci s technickou dokumentáciou, s dôrazom na presnosť, prehľadnosť a praktické využitie výstupov.
+                    </p>
                 </div>
-                <div class="cv-row">
-                    <div class="cv-header"><div class="cv-label">Vzdelanie</div></div>
-                    <div class="cv-content">Technická univerzita v Košiciach, Stavebná fakulta — Pozemné stavby a architektúra, bakalárske štúdium, ukončené štátnou skúškou 17. 6. 2021. Nadväzujúce štúdium v odbore Pozemné stavby v rokoch 2021 až 2023. Gymnázium Stropkov, ukončené maturitnou skúškou v roku 2017.</div>
-                </div>
-                <div class="cv-row" style="border-bottom: none;">
-                    <div class="cv-header"><div class="cv-label">Software</div></div>
-                    <div class="cv-content">
-                        <div class="project-result" style="border-left-width: 3px; padding-bottom: 2px;">
-                            <span class="project-tag" style="margin: 4px 4px 4px 0;">Archicad</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Dalux</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Allplan</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Lumion</span><span class="project-tag" style="margin: 4px 4px 4px 0;">BIMx</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Adobe Photoshop</span><span class="project-tag" style="margin: 4px 4px 4px 0;">Adobe Lightroom.</span>
+            </section>
+
+            <!-- Middle Section: Vzdelanie (Left) & Sidebar (Right) -->
+            <div class="cv-middle-grid">
+                
+                <!-- Vzdelanie Section -->
+                <section class="cv-section" style="padding: 0;">
+                    <h2 class="cv-section-title">Vzdelanie</h2>
+                    <div class="cv-timeline">
+                        
+                            <div class="cv-timeline-item">
+                                <div class="cv-timeline-dot"></div>
+                                <div class="cv-timeline-time">2021 — 2023</div>
+                                <h3 class="cv-timeline-title">Technická univerzita v Košiciach</h3>
+                                <div class="cv-timeline-subtitle">Stavebná fakulta</div>
+                                <p class="cv-timeline-desc">
+                                    Nadväzujúce inžinierske štúdium v odbore <strong>Pozemné stavby</strong>. Dôraz na navrhovanie nosných konštrukcií, fyziku budov a pokročilú projektovú prípravu.
+                                </p>
+                            </div>
+                            <div class="cv-timeline-item">
+                                <div class="cv-timeline-dot"></div>
+                                <div class="cv-timeline-time">2017 — 2021</div>
+                                <h3 class="cv-timeline-title">Technická univerzita v Košiciach</h3>
+                                <div class="cv-timeline-subtitle">Stavebná fakulta</div>
+                                <p class="cv-timeline-desc">
+                                    Bakalárske štúdium v odbore <strong>Pozemné stavby a architektúra</strong>, úspešne ukončené štátnou skúškou 17. 6. 2021.
+                                </p>
+                            </div>
+                            <div class="cv-timeline-item">
+                                <div class="cv-timeline-dot"></div>
+                                <div class="cv-timeline-time">2013 — 2017</div>
+                                <h3 class="cv-timeline-title">Gymnázium Stropkov</h3>
+                                <div class="cv-timeline-subtitle">Všeobecné stredoškolské vzdelanie</div>
+                                <p class="cv-timeline-desc">
+                                    Ukončené maturitnou skúškou v roku 2017 so zameraním na prírodné vedy a technické základy.
+                                </p>
+                            </div>
+                    </div>
+                </section>
+
+                <!-- Sidebar (Downloads) -->
+                <aside class="cv-sidebar">
+                    <div class="cv-card-visual">
+                        <img src="./assets/images/cv_architectural_graphic.png" alt="Architektonický výkres rezidencie - BIM modelovanie rekonštrukcie" class="cv-visual-img" loading="lazy">
+                        <div class="cv-sidebar-info">
+                            <h3 class="cv-sidebar-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; color:#EAB308;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                Dokumenty
+                            </h3>
+                            <div class="cv-sidebar-meta">
+                                <div><span>Formát:</span> <strong>PDF (A4)</strong></div>
+                                <div><span>Veľkosť:</span> <strong>~120 kB</strong></div>
+                                <div><span>Jazyk:</span> <strong>Slovenský</strong></div>
+                                <div><span>Aktualizované:</span> <strong>Máj 2026</strong></div>
+                            </div>
+                            <a href="./assets/cv/cv-sk.pdf" class="btn btn-primary" style="display: block; width: 100%; text-align: center;" target="_blank">Stiahnuť PDF</a>
                         </div>
                     </div>
-                </div>
+                </aside>
+
             </div>
 
-            <div style="padding-top: 56px;">
-                <a href="./assets/cv/cv-sk.pdf" class="btn btn-primary" target="_blank">Stiahnuť PDF</a>
-            </div>
+            <!-- Software Section (Full width) -->
+            <section class="cv-section" style="padding: 0;">
+                <h2 class="cv-section-title">Softvér & Zručnosti</h2>
+                <div class="software-grid">
+                    
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    </div>
+                                    <div class="software-name">Archicad</div>
+                                </div>
+                                <p class="software-role">Hlavný projekčný nástroj, pokročilé 3D BIM modelovanie a dokumentácia.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                    </div>
+                                    <div class="software-name">Dalux</div>
+                                </div>
+                                <p class="software-role">CDE platforma, koordinácia, prezeranie BIM modelov priamo na stavbe.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                                    </div>
+                                    <div class="software-name">Allplan</div>
+                                </div>
+                                <p class="software-role">BIM modelovanie, vystužovanie, presné stavebné konštrukcie.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></svg>
+                                    </div>
+                                    <div class="software-name">Lumion</div>
+                                </div>
+                                <p class="software-role">Fotorealistické 3D vizualizácie architektúry a exteriérov.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </div>
+                                    <div class="software-name">BIMx</div>
+                                </div>
+                                <p class="software-role">Prezentačné 3D modely a prechádzky, interaktívna koordinácia.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                    </div>
+                                    <div class="software-name">Photoshop</div>
+                                </div>
+                                <p class="software-role">Postprodukcia výkresov, koláže, finálna úprava vizualizácií.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                                    </div>
+                                    <div class="software-name">Lightroom</div>
+                                </div>
+                                <p class="software-role">Úprava a spracovanie fotografií, organizácia digitálneho portfólia.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="8.5" cy="12" r="2"></circle><path d="M15 9v6"></path><path d="M18 9v6"></path><path d="M15 12h3"></path></svg>
+                                    </div>
+                                    <div class="software-name">Canva</div>
+                                </div>
+                                <p class="software-role">Tvorba grafických podkladov, prezentácií a vizuálnych materiálov na komunikáciu projektov.</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+
         </section>
     
     </main>

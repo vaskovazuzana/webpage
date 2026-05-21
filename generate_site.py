@@ -684,6 +684,87 @@ LANGS = {
         'about_p5': 'Mimo práce ma nabíjajú hory, šport a fotografovanie. Slovenské hory sú môj pravidelný cieľ.',
         'title_cv': 'Životopis', 'btn_download': 'Stiahnuť PDF',
         'cv_edu': 'Technická univerzita v Košiciach, Stavebná fakulta — Pozemné stavby a architektúra, bakalárske štúdium, ukončené štátnou skúškou 17. 6. 2021. Nadväzujúce štúdium v odbore Pozemné stavby v rokoch 2021 až 2023. Gymnázium Stropkov, ukončené maturitnou skúškou v roku 2017.', 'cv_exp': 'Stavebná inžinierka so zameraním na projekciu stavieb a BIM modelovanie rekonštrukcií. V praxi sa venujem projektovej príprave, digitálnemu spracovaniu stavieb a práci s technickou dokumentáciou, s dôrazom na presnosť, prehľadnosť a praktické využitie výstupov.', 'cv_sw': 'Archicad, Dalux, Allplan, Lumion, BIMx, Adobe Photoshop, Adobe Lightroom.',
+        'cv_profile_title': 'Profil',
+        'cv_education_title': 'Vzdelanie',
+        'cv_education_list': [
+            {
+                'time': '2021 — 2023',
+                'title': 'Technická univerzita v Košiciach',
+                'subtitle': 'Stavebná fakulta',
+                'desc': 'Nadväzujúce inžinierske štúdium v odbore <strong>Pozemné stavby</strong>. Dôraz na navrhovanie nosných konštrukcií, fyziku budov a pokročilú projektovú prípravu.'
+            },
+            {
+                'time': '2017 — 2021',
+                'title': 'Technická univerzita v Košiciach',
+                'subtitle': 'Stavebná fakulta',
+                'desc': 'Bakalárske štúdium v odbore <strong>Pozemné stavby a architektúra</strong>, úspešne ukončené štátnou skúškou 17. 6. 2021.'
+            },
+            {
+                'time': '2013 — 2017',
+                'title': 'Gymnázium Stropkov',
+                'subtitle': 'Všeobecné stredoškolské vzdelanie',
+                'desc': 'Ukončené maturitnou skúškou v roku 2017 so zameraním na prírodné vedy a technické základy.'
+            }
+        ],
+        'cv_skills_title': 'Softvér & Zručnosti',
+        'cv_skills_list': [
+            {
+                'name': 'Archicad',
+                'role': 'Hlavný projekčný nástroj, pokročilé 3D BIM modelovanie a dokumentácia.',
+                'level': 95,
+                'icon': 'archicad'
+            },
+            {
+                'name': 'Dalux',
+                'role': 'CDE platforma, koordinácia, prezeranie BIM modelov priamo na stavbe.',
+                'level': 85,
+                'icon': 'dalux'
+            },
+            {
+                'name': 'Allplan',
+                'role': 'BIM modelovanie, vystužovanie, presné stavebné konštrukcie.',
+                'level': 80,
+                'icon': 'allplan'
+            },
+            {
+                'name': 'Lumion',
+                'role': 'Fotorealistické 3D vizualizácie architektúry a exteriérov.',
+                'level': 85,
+                'icon': 'lumion'
+            },
+            {
+                'name': 'BIMx',
+                'role': 'Prezentačné 3D modely a prechádzky, interaktívna koordinácia.',
+                'level': 90,
+                'icon': 'bimx'
+            },
+            {
+                'name': 'Photoshop',
+                'role': 'Postprodukcia výkresov, koláže, finálna úprava vizualizácií.',
+                'level': 80,
+                'icon': 'photoshop'
+            },
+            {
+                'name': 'Lightroom',
+                'role': 'Úprava a spracovanie fotografií, organizácia digitálneho portfólia.',
+                'level': 75,
+                'icon': 'lightroom'
+            },
+            {
+                'name': 'Canva',
+                'role': 'Tvorba grafických podkladov, prezentácií a vizuálnych materiálov na komunikáciu projektov.',
+                'level': 85,
+                'icon': 'canva'
+            }
+        ],
+        'cv_sidebar_docs_title': 'Dokumenty',
+        'cv_sidebar_format_label': 'Formát',
+        'cv_sidebar_size_label': 'Veľkosť',
+        'cv_sidebar_lang_label': 'Jazyk',
+        'cv_sidebar_lang_val': 'Slovenský',
+        'cv_sidebar_updated_label': 'Aktualizované',
+        'cv_sidebar_updated_val': 'Máj 2026',
+        'cv_sidebar_img_alt': 'Architektonický výkres rezidencie - BIM modelovanie rekonštrukcie',
         'title_contact': 'Kontakt', 'contact_page_intro': 'Ak riešite projekt, spoluprácu alebo sa chcete spojiť kvôli profesijnej príležitosti, budem rada, ak sa mi ozvete. Uprednostňujem vecnú a príjemnú komunikáciu s jasným zámerom.',
         'title_privacy': 'Ochrana osobných údajov', 'privacy_intro': 'Táto stránka vysvetľuje, aké osobné údaje zbierať pri návšteve webu vaskova.space a ako sú tieto údaje používané.',
         'privacy_content_full': '''
@@ -808,6 +889,87 @@ LANGS = {
         'about_p5': 'Outside of work, I recharge in the mountains, through sports, and photography. The Slovak mountains are my regular destination.',
         'title_cv': 'CV', 'btn_download': 'Download PDF',
         'cv_edu': 'Technical University of Košice, Faculty of Civil Engineering — Building Construction and Architecture, Bachelor studies, completed with state exam on June 17, 2021. Follow-up studies in the field of Building Construction from 2021 to 2023. Gymnasium Stropkov, completed with school-leaving exam in 2017.', 'cv_exp': 'Civil engineer focusing on building design and BIM modeling of reconstruction projects. In practice, I deal with project preparation, digital processing of buildings, and technical documentation, with an emphasis on accuracy, clarity, and practically usable outputs.', 'cv_sw': 'Archicad, Dalux, Allplan, Lumion, BIMx, Adobe Photoshop, Adobe Lightroom.',
+        'cv_profile_title': 'Profile',
+        'cv_education_title': 'Education',
+        'cv_education_list': [
+            {
+                'time': '2021 — 2023',
+                'title': 'Technical University of Košice',
+                'subtitle': 'Faculty of Civil Engineering',
+                'desc': 'Follow-up Master\'s studies in the field of <strong>Building Construction</strong>. Specialization in structural design, building physics, and advanced project preparation.'
+            },
+            {
+                'time': '2017 — 2021',
+                'title': 'Technical University of Košice',
+                'subtitle': 'Faculty of Civil Engineering',
+                'desc': 'Bachelor\'s studies in the field of <strong>Building Construction and Architecture</strong>, successfully completed with the state exam on June 17, 2021.'
+            },
+            {
+                'time': '2013 — 2017',
+                'title': 'Gymnázium Stropkov',
+                'subtitle': 'General Secondary Education',
+                'desc': 'Completed with the school-leaving exam in 2017, focusing on natural sciences and technical fundamentals.'
+            }
+        ],
+        'cv_skills_title': 'Software & Skills',
+        'cv_skills_list': [
+            {
+                'name': 'Archicad',
+                'role': 'Main design and drafting tool, advanced 3D BIM modeling and documentation.',
+                'level': 95,
+                'icon': 'archicad'
+            },
+            {
+                'name': 'Dalux',
+                'role': 'CDE platform, coordination, viewing BIM models directly on-site.',
+                'level': 85,
+                'icon': 'dalux'
+            },
+            {
+                'name': 'Allplan',
+                'role': 'BIM modeling, reinforcement, precise building structures.',
+                'level': 80,
+                'icon': 'allplan'
+            },
+            {
+                'name': 'Lumion',
+                'role': 'Photorealistic 3D visualizations of architecture and exteriors.',
+                'level': 85,
+                'icon': 'lumion'
+            },
+            {
+                'name': 'BIMx',
+                'role': 'Presentation 3D models and walk-throughs, interactive coordination.',
+                'level': 90,
+                'icon': 'bimx'
+            },
+            {
+                'name': 'Photoshop',
+                'role': 'Drawing post-production, collages, final touch-ups of visualizations.',
+                'level': 80,
+                'icon': 'photoshop'
+            },
+            {
+                'name': 'Lightroom',
+                'role': 'Photo processing and editing, organization of digital portfolio.',
+                'level': 75,
+                'icon': 'lightroom'
+            },
+            {
+                'name': 'Canva',
+                'role': 'Creating graphic materials, presentations and visual assets for project communication.',
+                'level': 85,
+                'icon': 'canva'
+            }
+        ],
+        'cv_sidebar_docs_title': 'Documents',
+        'cv_sidebar_format_label': 'Format',
+        'cv_sidebar_size_label': 'Size',
+        'cv_sidebar_lang_label': 'Language',
+        'cv_sidebar_lang_val': 'English',
+        'cv_sidebar_updated_label': 'Updated',
+        'cv_sidebar_updated_val': 'May 2026',
+        'cv_sidebar_img_alt': 'Architectural drawing of residence - BIM reconstruction modeling',
         'title_contact': 'Contact', 'contact_page_intro': 'If you are planning a project, a collaboration, or want to connect for a professional opportunity, I would be happy to hear from you. I value clear and pleasant communication with a specific intent.',
         'title_privacy': 'Privacy Policy', 'privacy_intro': 'This page explains what personal data is collected when visiting the website vaskova.space and how this data is used.',
         'privacy_content_full': '''
@@ -932,6 +1094,87 @@ LANGS = {
         'about_p5': 'Abseits der Arbeit tanke ich Kraft in den Bergen, beim Sport und beim Fotografieren. Die slowakischen Berge sind mein regelmäßiges Ziel.',
         'title_cv': 'Lebenslauf', 'btn_download': 'PDF herunterladen',
         'cv_edu': 'Technische Universität Košice, Fakultät für Bauingenieurwesen — Hochbau und Architektur, Bachelorstudium, abgeschlossen mit Staatsprüfung am 17. Juni 2021. Weiterführendes Studium im Bereich Hochbau von 2021 bis 2023. Gymnasium Stropkov, abgeschlossen mit Reifeprüfung im Jahr 2017.', 'cv_exp': 'Bauingenieurin mit Schwerpunkt auf Gebäudeplanung und BIM-Modellierung von Rekonstruktionsprojekten. In der Praxis beschäftige ich mich mit Projektvorbereitung, digitaler Gebäudebearbeitung und technischer Dokumentation, mit Fokus auf Präzision, Klarheit und praktisch nutzbare Ergebnisse.', 'cv_sw': 'Archicad, Dalux, Allplan, Lumion, BIMx, Adobe Photoshop, Adobe Lightroom.',
+        'cv_profile_title': 'Profil',
+        'cv_education_title': 'Ausbildung',
+        'cv_education_list': [
+            {
+                'time': '2021 — 2023',
+                'title': 'Technische Universität Košice',
+                'subtitle': 'Fakultät für Bauingenieurwesen',
+                'desc': 'Weiterführendes Masterstudium im Bereich <strong>Hochbau</strong>. Schwerpunkt auf Tragwerksplanung, Bauphysik und fortgeschrittene Projektvorbereitung.'
+            },
+            {
+                'time': '2017 — 2021',
+                'title': 'Technische Universität Košice',
+                'subtitle': 'Fakultät für Bauingenieurwesen',
+                'desc': 'Bachelorstudium im Bereich <strong>Hochbau und Architektur</strong>, erfolgreich abgeschlossen mit der Staatsprüfung am 17. Juni 2021.'
+            },
+            {
+                'time': '2013 — 2017',
+                'title': 'Gymnázium Stropkov',
+                'subtitle': 'Allgemeine Sekundarstufe II',
+                'desc': 'Abgeschlossen mit der Reifeprüfung im Jahr 2017, mit Schwerpunkt auf Naturwissenschaften und technische Grundlagen.'
+            }
+        ],
+        'cv_skills_title': 'Software & Kenntnisse',
+        'cv_skills_list': [
+            {
+                'name': 'Archicad',
+                'role': 'Hauptplanungswerkzeug, fortgeschrittene 3D BIM-Modellierung und Dokumentation.',
+                'level': 95,
+                'icon': 'archicad'
+            },
+            {
+                'name': 'Dalux',
+                'role': 'CDE-Plattform, Koordination, direkte Anzeige von BIM-Modellen auf der Baustelle.',
+                'level': 85,
+                'icon': 'dalux'
+            },
+            {
+                'name': 'Allplan',
+                'role': 'BIM-Modellierung, Bewehrung, präzise Baukonstruktionen.',
+                'level': 80,
+                'icon': 'allplan'
+            },
+            {
+                'name': 'Lumion',
+                'role': 'Fotorealistische 3D-Visualisierungen von Architektur und Außenräumen.',
+                'level': 85,
+                'icon': 'lumion'
+            },
+            {
+                'name': 'BIMx',
+                'role': 'Präsentation von 3D-Modellen und virtuelle Begehungen, interaktive Koordination.',
+                'level': 90,
+                'icon': 'bimx'
+            },
+            {
+                'name': 'Photoshop',
+                'role': 'Nachbearbeitung von Zeichnungen, Collagen, finaler Feinschliff von Visualisierungen.',
+                'level': 80,
+                'icon': 'photoshop'
+            },
+            {
+                'name': 'Lightroom',
+                'role': 'Bildverarbeitung und -bearbeitung, Organisation des digitalen Portfolios.',
+                'level': 75,
+                'icon': 'lightroom'
+            },
+            {
+                'name': 'Canva',
+                'role': 'Erstellung von Grafikmaterialien, Präsentationen und visuellen Inhalten zur Projektkommunikation.',
+                'level': 85,
+                'icon': 'canva'
+            }
+        ],
+        'cv_sidebar_docs_title': 'Dokumente',
+        'cv_sidebar_format_label': 'Format',
+        'cv_sidebar_size_label': 'Größe',
+        'cv_sidebar_lang_label': 'Sprache',
+        'cv_sidebar_lang_val': 'Deutsch',
+        'cv_sidebar_updated_label': 'Aktualisiert',
+        'cv_sidebar_updated_val': 'Mai 2026',
+        'cv_sidebar_img_alt': 'Architektonische Zeichnung der Residenz - BIM-Rekonstruktionsmodellierung',
         'title_contact': 'Kontakt', 'contact_page_intro': 'Wenn Sie ein Projekt planen, eine Zusammenarbeit in Betracht ziehen oder mich wegen einer beruflichen Gelegenheit kontaktieren möchten, freue ich mich über Ihre Nachricht. Ich schätze klare und angenehme Kommunikation mit einem konkreten Anliegen.',
         'title_privacy': 'Datenschutzerklärung', 'privacy_intro': 'Diese Seite erklärt, welche personenbezogenen Daten bei einem Besuch der Website vaskova.space erhoben werden und wie sie verwendet werden.',
         'privacy_content_full': '''
@@ -1210,33 +1453,384 @@ for lang, d in LANGS.items():
     write(get_file_path(d['urls']['projects']), render_layout(lang, d['sec_projects'], d['urls']['projects'], projects_content, 'projects', d['meta_projects']))
 
     # 4. CV
-    tools_html = "".join([f'<span class="project-tag" style="margin: 4px 4px 4px 0;">{t.strip()}</span>' for t in d['cv_sw'].split(',')])
+    cv_prefix = get_asset_prefix(d['urls']['cv'])
+    svg_icons = {
+        'archicad': '<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>',
+        'dalux': '<svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>',
+        'allplan': '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>',
+        'lumion': '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></svg>',
+        'bimx': '<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>',
+        'photoshop': '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>',
+        'lightroom': '<svg viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>',
+        'canva': '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="8.5" cy="12" r="2"></circle><path d="M15 9v6"></path><path d="M18 9v6"></path><path d="M15 12h3"></path></svg>'
+    }
+
+    edu_html = ""
+    for item in d['cv_education_list']:
+        edu_html += f'''
+                            <div class="cv-timeline-item">
+                                <div class="cv-timeline-dot"></div>
+                                <div class="cv-timeline-time">{item['time']}</div>
+                                <h3 class="cv-timeline-title">{item['title']}</h3>
+                                <div class="cv-timeline-subtitle">{item['subtitle']}</div>
+                                <p class="cv-timeline-desc">
+                                    {item['desc']}
+                                </p>
+                            </div>'''
+
+    skills_html = ""
+    for skill in d['cv_skills_list']:
+        icon_svg = svg_icons.get(skill['icon'], '')
+        skills_html += f'''
+                            <div class="software-card">
+                                <div class="software-card-header">
+                                    <div class="software-icon">
+                                        {icon_svg}
+                                    </div>
+                                    <div class="software-name">{skill['name']}</div>
+                                </div>
+                                <p class="software-role">{skill['role']}</p>
+                                <div class="software-level">
+                                    <div class="software-level-bar" style="width: {skill['level']}%;"></div>
+                                </div>
+                            </div>'''
+
     cv_content = f'''
-        <section class="container" style="padding-top: 64px;">
-            <h1 class="mb-8">{d['title_cv']}</h1>
+        <style>
+            /* Scoped style for the CV page */
+            .cv-middle-grid {{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }}
+
+            @media (min-width: 1024px) {{
+                .cv-middle-grid {{
+                    grid-template-columns: 1fr 360px;
+                    gap: 56px;
+                    align-items: start;
+                }}
+            }}
+
+            .cv-sidebar {{
+                position: sticky;
+                top: 100px;
+            }}
+
+            .cv-card-visual {{
+                background-color: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+                margin-bottom: 24px;
+            }}
+
+            .cv-card-visual:hover {{
+                border-color: #EAB308;
+                box-shadow: 0 16px 40px rgba(234, 179, 8, 0.12);
+                transform: translateY(-6px);
+            }}
+
+            .cv-visual-img {{
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                display: block;
+                border-bottom: 1px solid var(--color-border);
+            }}
+
+            .cv-sidebar-info {{
+                padding: 24px;
+            }}
+
+            .cv-sidebar-title {{
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 12px;
+                color: var(--color-text);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }}
+
+            .cv-sidebar-meta {{
+                font-size: 13.5px;
+                color: var(--color-text-muted);
+                line-height: 1.7;
+                margin-bottom: 24px;
+            }}
+
+            .cv-sidebar-meta div {{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px dashed var(--color-border);
+                padding: 6px 0;
+            }}
+
+            .cv-sidebar-meta div:last-child {{
+                border-bottom: none;
+            }}
+
+            .cv-sidebar-meta strong {{
+                color: var(--color-text);
+                font-weight: 500;
+            }}
+
+            /* Sections styling */
+            .cv-section {{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }}
+
+            .cv-section-title {{
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                color: var(--color-text);
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+            }}
+
+            .cv-section-title::before {{
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 2px;
+                background-color: #EAB308;
+                margin-right: 12px;
+                flex-shrink: 0;
+            }}
+
+            /* Timeline */
+            .cv-timeline {{
+                position: relative;
+                padding-left: 28px;
+                border-left: 1.5px solid var(--color-border);
+                margin-left: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }}
+
+            .cv-timeline-item {{
+                position: relative;
+                transition: transform 0.2s ease;
+            }}
+
+            .cv-timeline-item:hover {{
+                transform: translateX(4px);
+            }}
+
+            .cv-timeline-dot {{
+                position: absolute;
+                left: -35px;
+                top: 5px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: var(--color-bg);
+                border: 2.5px solid #EAB308;
+                transition: background-color 0.25s ease, box-shadow 0.25s ease;
+            }}
+
+            .cv-timeline-item:hover .cv-timeline-dot {{
+                background-color: #EAB308;
+                box-shadow: 0 0 0 4px rgba(234, 179, 8, 0.2);
+            }}
+
+            .cv-timeline-time {{
+                font-size: 13px;
+                font-weight: 600;
+                color: #EAB308;
+                margin-bottom: 4px;
+                letter-spacing: 0.05em;
+            }}
+
+            .cv-timeline-title {{
+                font-size: 17px;
+                font-weight: 500;
+                color: var(--color-text);
+                margin-bottom: 4px;
+                line-height: 1.4;
+            }}
+
+            .cv-timeline-subtitle {{
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-text-muted);
+                margin-bottom: 8px;
+            }}
+
+            .cv-timeline-desc {{
+                font-size: 14.5px;
+                line-height: 1.7;
+                color: var(--color-text-muted);
+            }}
+
+            /* Software grid */
+            .software-grid {{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }}
+
+            @media (min-width: 480px) {{
+                .software-grid {{
+                    grid-template-columns: repeat(2, 1fr);
+                }}
+            }}
+
+            @media (min-width: 768px) {{
+                .software-grid {{
+                    grid-template-columns: repeat(3, 1fr);
+                }}
+            }}
+
+            @media (min-width: 1200px) {{
+                .software-grid {{
+                    grid-template-columns: repeat(4, 1fr);
+                }}
+            }}
+
+            .software-card {{
+                background-color: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-radius: 6px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+            }}
+
+            .software-card:hover {{
+                transform: translateY(-4px);
+                border-color: #EAB308;
+                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+            }}
+
+            .software-card-header {{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }}
+
+            .software-icon {{
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #EAB308;
+                background-color: rgba(234, 179, 8, 0.06);
+                border-radius: 4px;
+                flex-shrink: 0;
+                transition: background-color 0.2s ease;
+            }}
+
+            .software-card:hover .software-icon {{
+                background-color: rgba(234, 179, 8, 0.12);
+            }}
+
+            .software-icon svg {{
+                width: 20px;
+                height: 20px;
+                stroke: currentColor;
+                stroke-width: 1.8;
+                fill: none;
+            }}
+
+            .software-name {{
+                font-size: 15px;
+                font-weight: 500;
+                color: var(--color-text);
+            }}
+
+            .software-role {{
+                font-size: 13px;
+                color: var(--color-text-muted);
+                line-height: 1.45;
+                min-height: 36px;
+            }}
+
+            .software-level {{
+                margin-top: auto;
+                height: 3px;
+                background-color: var(--color-border);
+                border-radius: 1.5px;
+                overflow: hidden;
+                position: relative;
+            }}
+
+            .software-level-bar {{
+                height: 100%;
+                background-color: #EAB308;
+                border-radius: 1.5px;
+                transition: width 1.2s ease-out;
+            }}
+        </style>
+
+        <section class="container" style="padding-top: 64px; padding-bottom: 64px; display: flex; flex-direction: column; gap: 56px;">
+            <h1 class="mb-4">{d['title_cv']}</h1>
             
-            <div class="cv-block">
-                <div class="cv-row">
-                    <div class="cv-header"><div class="cv-label">Profil</div></div>
-                    <div class="cv-content">{d['cv_exp']}</div>
+            <!-- Profil Section (Full width) -->
+            <section class="cv-section" style="padding: 0;">
+                <h2 class="cv-section-title">{d['cv_profile_title']}</h2>
+                <div class="project-result" style="border-left-width: 4px; padding-left: 20px;">
+                    <p class="cv-profile-text" style="font-size: 15.5px; line-height: 1.8;">
+                        {d['cv_exp']}
+                    </p>
                 </div>
-                <div class="cv-row">
-                    <div class="cv-header"><div class="cv-label">Vzdelanie</div></div>
-                    <div class="cv-content">{d['cv_edu']}</div>
-                </div>
-                <div class="cv-row" style="border-bottom: none;">
-                    <div class="cv-header"><div class="cv-label">Software</div></div>
-                    <div class="cv-content">
-                        <div class="project-result" style="border-left-width: 3px; padding-bottom: 2px;">
-                            {tools_html}
+            </section>
+
+            <!-- Middle Section: Vzdelanie (Left) & Sidebar (Right) -->
+            <div class="cv-middle-grid">
+                
+                <!-- Vzdelanie Section -->
+                <section class="cv-section" style="padding: 0;">
+                    <h2 class="cv-section-title">{d['cv_education_title']}</h2>
+                    <div class="cv-timeline">
+                        {edu_html}
+                    </div>
+                </section>
+
+                <!-- Sidebar (Downloads) -->
+                <aside class="cv-sidebar">
+                    <div class="cv-card-visual">
+                        <img src="{cv_prefix}assets/images/cv_architectural_graphic.png" alt="{d['cv_sidebar_img_alt']}" class="cv-visual-img" loading="lazy">
+                        <div class="cv-sidebar-info">
+                            <h3 class="cv-sidebar-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; color:#EAB308;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                {d['cv_sidebar_docs_title']}
+                            </h3>
+                            <div class="cv-sidebar-meta">
+                                <div><span>{d['cv_sidebar_format_label']}:</span> <strong>PDF (A4)</strong></div>
+                                <div><span>{d['cv_sidebar_size_label']}:</span> <strong>~120 kB</strong></div>
+                                <div><span>{d['cv_sidebar_lang_label']}:</span> <strong>{d['cv_sidebar_lang_val']}</strong></div>
+                                <div><span>{d['cv_sidebar_updated_label']}:</span> <strong>{d['cv_sidebar_updated_val']}</strong></div>
+                            </div>
+                            <a href="{cv_prefix}assets/cv/cv-{lang}.pdf" class="btn btn-primary" style="display: block; width: 100%; text-align: center;" target="_blank">{d['btn_download']}</a>
                         </div>
                     </div>
-                </div>
+                </aside>
+
             </div>
 
-            <div style="padding-top: 56px;">
-                <a href="{asset_p}assets/cv/cv-{lang}.pdf" class="btn btn-primary" target="_blank">{d['btn_download']}</a>
-            </div>
+            <!-- Software Section (Full width) -->
+            <section class="cv-section" style="padding: 0;">
+                <h2 class="cv-section-title">{d['cv_skills_title']}</h2>
+                <div class="software-grid">
+                    {skills_html}
+                </div>
+            </section>
+
         </section>
     '''
     write(get_file_path(d['urls']['cv']), render_layout(lang, d['title_cv'], d['urls']['cv'], cv_content, 'cv', d['meta_cv']))
