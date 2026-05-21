@@ -4,7 +4,6 @@ export async function onRequestPost(context) {
   const token = formData.get('cf-turnstile-response');
   const ip = request.headers.get('CF-Connecting-IP');
 
-  // Validate Turnstile
   let turnstileFormData = new FormData();
   turnstileFormData.append('secret', env.TURNSTILE_SECRET_KEY);
   turnstileFormData.append('response', token);
@@ -17,24 +16,46 @@ export async function onRequestPost(context) {
 
   const outcome = await result.json();
   if (!outcome.success) {
-    return new Response('Invalid captcha', { status: 403 });
+    return new Response(
+      'Invalid captcha: ' + JSON.stringify(outcome),
+      { status: 403 }
+    );
   }
 
-  // Honeypot check
+
   if (formData.get('website')) {
     return new Response('Spam detected', { status: 400 });
   }
 
-  // Data processing
   const name = formData.get('name');
   const email = formData.get('email');
   const message = formData.get('message');
 
-  // NOTE: Here you would typically send an email using Mailchannels or a similar service
-  // For now, we'll just log it or return a success message
-  console.log(`New contact form submission from ${name} (${email}): ${message}`);
+  const resendResponse = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${env.RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'Kontakt <web@mail.vaskova.space>',
+      to: ['zuzana@vaskova.space'],
+      reply_to: email,
+      subject: `Nová správa z formulára od ${name}`,
+      html: `
+        <h2>Nová správa z kontaktného formulára</h2>
+        <p><strong>Meno:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Správa:</strong></p>
+        <p>${message}</p>
+      `,
+    }),
+  });
 
-  // Redirect back or return JSON
+  if (!resendResponse.ok) {
+    return new Response('Email sending failed', { status: 500 });
+  }
+
   return new Response(null, {
     status: 302,
     headers: {
