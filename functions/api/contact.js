@@ -1,27 +1,36 @@
-export async function onRequestPost(context) {
-  return new Response('TEST CONTACT FUNCTION', { status: 200 });
-
-  const { request, env } = context;
+export async function onRequestPost(context) {  const { request, env } = context;
   const formData = await request.formData();
   const token = formData.get('cf-turnstile-response');
+  if (!token) {
+    return new Response('Missing captcha token', { status: 400 });
+  }
+  console.log('Turnstile token:', token);
   const ip = request.headers.get('CF-Connecting-IP');
 
-  let turnstileFormData = new FormData();
-  turnstileFormData.append('secret', env.TURNSTILE_SECRET_KEY);
-  turnstileFormData.append('response', token);
-  turnstileFormData.append('remoteip', ip);
-
+  const turnstileSecret = env.TURNSTILE_SECRET_KEY || env.TURNSTILE_SECRET;
+  if (!turnstileSecret) {
+    console.error('Turnstile secret not configured');
+    return new Response('Server configuration error', { status: 500 });
+  }
+  console.log('Turnstile secret loaded');
+  const turnstileParams = new URLSearchParams();
+  turnstileParams.append('secret', turnstileSecret);
+  turnstileParams.append('response', token);
+  if (ip) {
+    turnstileParams.append('remoteip', ip);
+  }
   const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    body: turnstileFormData,
     method: 'POST',
+    body: turnstileParams,
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
   });
-
   const outcome = await result.json();
+  console.log('Turnstile verification outcome:', outcome);
   if (!outcome.success) {
-    return new Response(
-      'Invalid captcha: ' + JSON.stringify(outcome),
-      { status: 403 }
-    );
+    console.warn('Invalid captcha', outcome);
+    return new Response('Invalid captcha: ' + JSON.stringify(outcome), { status: 403 });
   }
 
   if (formData.get('website')) {
