@@ -625,9 +625,9 @@ LANGS = {
                 'result': 'Rekonštrukcia bytového komplexu v Nemecku — 900 m² obytnej plochy, 9 luxusných bytov, 5 bytov pre seniorov.'
             },
             {
-                'title': 'Rodinný dom',
+                'title': 'Slovenská Ves',
                 'tags': ['RODINNÝ DOM', 'NOVOSTAVBA', 'ARCHICAD'],
-                'img': 'rodinny_dom.jpg',
+                'img': 'slovenska_ves.jpg',
                 'desc': 'Spracovanie návrhu, architektonickej štúdie a projektu pre stavebné povolenie.',
                 'result': 'Moderný dvojpodlažný rodinný dom s plochou strechou, dreveným obkladom a integrovanou garážou.'
             },
@@ -830,9 +830,9 @@ LANGS = {
                 'result': 'Reconstruction of a residential complex in Germany — 900 m² of living space, 9 luxury apartments, 5 apartments for seniors.'
             },
             {
-                'title': 'Family House',
+                'title': 'Slovenská Ves',
                 'tags': ['FAMILY HOUSE', 'NEW BUILD', 'ARCHICAD'],
-                'img': 'rodinny_dom.jpg',
+                'img': 'slovenska_ves.jpg',
                 'desc': 'Preparation of the design, architectural study, and project for a building permit.',
                 'result': 'Modern two-story family house with a flat roof, wood cladding, and integrated garage.'
             },
@@ -1035,9 +1035,9 @@ LANGS = {
                 'result': 'Sanierung einer Wohnanlage in Deutschland — 900 m² Wohnfläche, 9 Luxuswohnungen, 5 Seniorenwohnungen.'
             },
             {
-                'title': 'Einfamilienhaus',
+                'title': 'Slovenská Ves',
                 'tags': ['EINFAMILIENHAUS', 'NEUBAU', 'ARCHICAD'],
-                'img': 'rodinny_dom.jpg',
+                'img': 'slovenska_ves.jpg',
                 'desc': 'Ausarbeitung von Entwurf, architektonischer Studie und Projekt für die Baugenehmigung.',
                 'result': 'Modernes zweistöckiges Einfamilienhaus mit Flachdach, Holzverkleidung und integrierter Garage.'
             },
