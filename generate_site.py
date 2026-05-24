@@ -1416,8 +1416,7 @@ for lang, d in LANGS.items():
                             <p class="mb-4">{d['about_p1']}</p>
                             <p class="mb-4">{d['about_p2']}</p>
                             <p class="mb-4">{d['about_p3']}</p>
-                            <p class="mb-4">{d['about_p4']}</p>
-                            <p>{d['about_p5']}</p>
+                            <p>{d['about_p4']}</p>
                         </div>
                     </div>
                 </div>
@@ -1857,7 +1856,7 @@ for lang, d in LANGS.items():
                     </div>
                     <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                     
-                    <div class="cf-turnstile mb-6" data-sitekey="0x4AAAAAAABBBBBCCCCCDDDD"></div>
+                    <div class="cf-turnstile mb-6" data-sitekey="0x4AAAAAADT3OfjmkyZFgTnh"></div>
                     
                     <button type="submit" class="btn btn-primary mb-4">{d['btn_send']}</button>
                     <p class="text-micro text-muted"><a href="{get_asset_prefix(d['urls']['contact']) + get_file_path(d['urls']['privacy'])}" class="text-muted">{d['privacy_note']}</a></p>
